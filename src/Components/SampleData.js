@@ -1,12 +1,4 @@
-import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
-import './App.css';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Calendar from './Components/Calendar';
-import Eg from './Components/Eg';
-import Add from './Components/Add';
-import Edit from './Components/Edit';
-
-function App() {
+import { json } from "react-router-dom"
 
 const list=[
     {
@@ -9713,33 +9705,18 @@ const list=[
         "id": 1617
     },
     {
-        "startTime": "2023-05-19T13:00:25.229Z",
+        "startTime": "Sun May 22 2018 11:30:00 GMT+0530 (IST)",
         "endTime": "Sun May 22 2018 13:00:00 GMT+0530 (IST)",
         "title": "Event 1618",
         "id": 1618
     },
     {
-        "startTime": "2023-05-19T13:00:25.229Z",
-        "endTime": "Fri May 20 2023 12:05:01 GMT+0530 (India Standard Time)",
+        "startTime": "Sat May 21 2018 20:00:00 GMT+0530 (IST)",
+        "endTime": "Sat May 21 2018 20:15:00 GMT+0530 (IST)",
         "title": "Event 1619",
-        "id": 1619,
+        "id": 1619
     }
 ]
 
 
-
-
 window.localStorage.setItem("sampledata",JSON.stringify(list))
-  return (
-    <BrowserRouter>
-    <Routes>
-      <Route path='/' element={<Calendar/>}/>
-      <Route path='/add' element={<Add/>}/>
-      <Route path='/edit/:id' element={<Edit/>} />
-    </Routes>
-    </BrowserRouter>
-
-  );
-}
-
-export default App;
