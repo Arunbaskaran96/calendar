@@ -33,9 +33,9 @@ function Edit() {
         <form onSubmit={formik.handleSubmit}>
         <div className='row edit-conatiner'>
             <div className='col-4' style={{textAlign:"end"}}>
-                <label className='edit-label'>Title</label><br/>
-                <label className='edit-label'>Start Time</label><br/>
-                <label className='edit-label'>End Time</label><br/>
+                <label className='edit-label'>Title :</label><br/>
+                <label className='edit-label'>Start Time :</label><br/>
+                <label className='edit-label'>End Time :</label><br/>
             </div>
             <div className='col-6'>
                 <input  className='edit-int' name='title' onChange={formik.handleChange} value={formik.values.title}/><br/>

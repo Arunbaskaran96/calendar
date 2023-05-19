@@ -85,12 +85,12 @@ function Calendar() {
                         return(
                             <div key={index} className='event-card'>
                                 <div className='mini-card1'>
-                                    <div><span>Title</span> : {item.title}</div>
-                                    <div><span>Start Time</span> : {`${hour} : ${minute}`}</div>
-                                    <div><span>End Time</span> : {`${hour1} : ${minute1}`}</div>
+                                    <div><span className='span-event'>Title</span> : {item.title}</div>
+                                    <div><span className='span-event'>Start Time</span> : {`${hour} : ${minute}`}</div>
+                                    <div><span className='span-event'>End Time</span> : {`${hour1} : ${minute1}`}</div>
                                 </div>
                                 <div className='mini-card2'>
-                                    <Link to={`/edit/${item.id}`} className='btn btn-secondary btn-sm'>Edit</Link>
+                                    <Link to={`/edit/${item.id}`} className='btn btn-secondary btn-sm' style={{marginRight:"5px"}}>Edit</Link>
                                     <button onClick={()=>removeItem(item.id)} className='btn btn-danger btn-sm'>Delete</button>
                                 </div>
                                 </div>
