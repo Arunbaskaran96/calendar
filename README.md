@@ -1,6 +1,6 @@
 # Getting Started with Create React App
 
-live link (https://github.com/facebook/create-react-app).
+live link (https://delightful-cajeta-385378.netlify.app/).
 
 ## Available Scripts
 
